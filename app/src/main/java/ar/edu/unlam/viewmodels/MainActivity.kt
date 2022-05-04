@@ -8,7 +8,7 @@ import androidx.activity.viewModels
 
 class MainActivity : AppCompatActivity() {
 
-    val vm: MainViewModel by viewModels { MainViewModel.Factory(10) }
+    val vm: MainViewModel by viewModels { MainViewModel.Factory(0) }
     lateinit var texto: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,4 +22,10 @@ class MainActivity : AppCompatActivity() {
             texto.text = vm.cantidadClicks.toString()
         }
     }
+
+    override fun onStart() {
+        super.onStart()
+
+    }
+
 }
