@@ -3,8 +3,6 @@ package ar.edu.unlam.viewmodels.viewmodels
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import ar.edu.unlam.viewmodels.models.Android
-import ar.edu.unlam.viewmodels.repository.AndroidRepository
 
 class MainViewModel(initialQuantity: Int) : ViewModel() {
     var clicksAmount: MutableLiveData<Int> = MutableLiveData(initialQuantity)
